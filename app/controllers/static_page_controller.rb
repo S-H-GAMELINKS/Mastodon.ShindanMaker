@@ -10,7 +10,7 @@ class StaticPageController < ApplicationController
   end
 
   def result
-    @user = current_user.display_name
+    @user = current_user.name
     @theme = Post.find(params[:id]).theme.split(" ")
   end
 end
