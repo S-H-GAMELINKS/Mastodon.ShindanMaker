@@ -10,5 +10,7 @@ class StaticPageController < ApplicationController
   end
 
   def result
+    @user = "S.H."
+    @post = Post.find(1)
   end
 end
