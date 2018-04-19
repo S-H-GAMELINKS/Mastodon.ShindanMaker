@@ -9,7 +9,7 @@ class User < ApplicationRecord
       
     unless user
       user = User.create(
-        name:     auth.info.extra.raw_info.display_name,
+        name:     auth.info.extra.display_name,
         uid:      auth.uid,
         provider: auth.provider,
         email:    User.dummy_email(auth),
