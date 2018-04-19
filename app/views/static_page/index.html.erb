@@ -4,6 +4,8 @@
 
 <%= render 'theme/index' %>
 
+<%= button_to "診断を作る", new_post_path %>
+
 <% else %>
   <p><%= link_to "Mastodonアカウントでログイン", user_mastodon_omniauth_authorize_path %></p>
 <% end %>
