@@ -1,4 +1,9 @@
+<% if user_signed_in? %>
 <h1>StaticPage#index</h1>
 <p>Find me in app/views/static_page/index.html.erb</p>
 
 <%= render 'theme/index' %>
+
+<% else %>
+  <p><%= link_to "Mastodonアカウントでログイン", user_mastodon_omniauth_authorize_path %></p>
+<% end %>
