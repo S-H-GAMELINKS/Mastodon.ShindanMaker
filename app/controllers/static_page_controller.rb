@@ -11,6 +11,6 @@ class StaticPageController < ApplicationController
 
   def result
     @user = "S.H."
-    @post = Post.find(1)
+    @post = Post.find(params[:id])
   end
 end
