@@ -1,3 +1,3 @@
 <%= @user %> さんは <%= @theme[rand(@theme.count)] %> です。
 
-<p>診断結果をMastodonへシェアする</p>
+<p><%= linkt_to "診断結果をMastodonへシェアする", "https://mastoshare.net/post.php?text=#{@user}さんは#{@theme[rand(@theme.count)]}です。\n #Mastodon診断アプリ"%></p>
