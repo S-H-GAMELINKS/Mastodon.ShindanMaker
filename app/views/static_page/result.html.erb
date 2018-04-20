@@ -1,1 +1,4 @@
 <%= @user %> さんは <%= @theme[rand(@theme.count)] %> です。
+
+<p>診断結果をMastodonへシェアする</p>
+<a href="https://mastoshare.net/post.php?text=%0D%0A%23Mastodon%E8%A8%BA%E6%96%AD%E3%82%A2%E3%83%97%E3%83%AA%0D%0Ahttps%3A%2F%2Fmastodon-shindanmaker.herokuapp.com%2F" onclick="window.open(this.href, '', 'width=500,height=400'); return false;"><img src="https://mastoshare.net/img/toot.svg" width="75" height="20"></a>
