@@ -19,6 +19,9 @@
         <td><%= post.content %></td>
         <td><%= post.author %></td>
         <td><%= link_to '診断', static_page_result_path(:id => post.id) %></td>
+        <% if currnet_user.id == post.user_id ?%>
+        <td><%= link_to '編集', edit_post_path(:id => post.id, :suer_id => currnet_user.id) %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
