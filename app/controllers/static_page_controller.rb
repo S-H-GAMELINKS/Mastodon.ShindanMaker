@@ -12,6 +12,6 @@ class StaticPageController < ApplicationController
   def result
     @theme = Post.find(params[:id]).theme.split(" ")
     @result = "#{current_user.name}さんは#{@theme[rand(@theme.count)]}#{"#" + Post.find(params[:id]).title}"
-    @share = @result + "#" + @theme
+    @share = "#{@result}##{@theme}"
   end
 end
