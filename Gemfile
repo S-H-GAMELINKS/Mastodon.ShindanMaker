@@ -35,6 +35,7 @@ gem 'devise'
 gem 'mastodon-api', require: 'mastodon'
 gem 'omniauth-mastodon'
 gem 'omniauth'
+gem 'omniauth-oauth2', '~> 1.3.1'
 
 gem 'dotenv-rails'
 
